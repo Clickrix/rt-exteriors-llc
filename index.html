@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>R/T Exteriors, LLC | Roofing Contractor — Chisago City, MN</title>
+<meta name="description" content="R/T Exteriors, LLC is a licensed and insured roofing contractor in Chisago City, MN with 20+ years of experience. Roof replacement, siding, windows, seamless gutters and 24-hour emergency service. Call (651) 334-6012.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --slate:#131a24; --slate2:#1c2634; --red:#e63946; --red-d:#c1121f;
+  --ink:#182230; --muted:#5d6b7e; --bg:#f6f7f9; --card:#ffffff; --line:#e3e7ed;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',system-ui,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+h1,h2,h3{font-family:'Oswald',sans-serif;line-height:1.15;color:var(--slate);letter-spacing:.3px}
+a{text-decoration:none;color:inherit}
+.container{max-width:1120px;margin:0 auto;padding:0 20px}
+/* NAV */
+.nav{position:sticky;top:0;z-index:100;background:rgba(19,26,36,.97);backdrop-filter:blur(6px);transition:box-shadow .25s}
+.nav.scrolled{box-shadow:0 4px 18px rgba(0,0,0,.3)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;font-family:'Oswald';font-weight:700;font-size:1.3rem;letter-spacing:1px}
+.brand-mark{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--red),var(--red-d));display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:1rem;font-family:'Oswald'}
+.nav-links{display:flex;gap:26px;align-items:center}
+.nav-links a{color:#d7dee8;font-weight:600;font-size:.93rem}
+.nav-links a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--red),var(--red-d));color:#fff!important;font-weight:800;padding:12px 24px;border-radius:10px;border:0;cursor:pointer;font-size:1rem;transition:transform .15s,box-shadow .15s;box-shadow:0 6px 18px rgba(230,57,70,.4)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(230,57,70,.5)}
+.btn-outline{background:transparent;color:#fff!important;border:2px solid rgba(255,255,255,.5);box-shadow:none}
+.btn-outline:hover{border-color:#fff;box-shadow:none}
+.menu-toggle{display:none;background:none;border:0;color:#fff;font-size:1.6rem;cursor:pointer}
+/* HERO */
+.hero{background:linear-gradient(140deg,#131a24 0%,#232f42 60%,#31435c 100%);color:#fff;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(620px 320px at 85% 15%,rgba(230,57,70,.22),transparent 60%)}
+.hero-inner{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:84px 0 72px}
+.eyebrow{display:inline-block;background:rgba(230,57,70,.14);border:1px solid rgba(230,57,70,.55);color:#ff8a93;font-weight:700;font-size:.8rem;letter-spacing:1.5px;text-transform:uppercase;padding:7px 14px;border-radius:999px;margin-bottom:18px}
+.hero h1{color:#fff;font-size:clamp(2.1rem,4.5vw,3.4rem);font-weight:700;margin-bottom:16px;text-transform:uppercase}
+.hero h1 span{color:var(--red)}
+.hero p.lead{color:#c6d1e0;font-size:1.12rem;max-width:34rem;margin-bottom:30px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:28px}
+.hero-card h3{color:#fff;font-size:1.05rem;margin-bottom:6px;font-family:'Manrope';font-weight:700}
+.hero-card .big{font-family:'Oswald';font-weight:700;font-size:1.8rem;color:#fff;margin:6px 0;letter-spacing:1px}
+.hero-card .big a:hover{color:var(--red)}
+.hero-card p{color:#c6d1e0;font-size:.92rem}
+.hero-card .btn{margin-top:16px;width:100%;justify-content:center}
+.emergency{margin-top:14px;display:flex;gap:10px;align-items:center;color:#ffb3b9;font-size:.9rem;font-weight:600}
+/* TRUST */
+.trust{background:#0d131c;border-top:1px solid rgba(255,255,255,.08)}
+.trust-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:22px 0}
+.trust-item{display:flex;align-items:center;gap:12px;justify-content:center}
+.trust-item .tick{width:34px;height:34px;flex:0 0 34px;border-radius:50%;background:rgba(230,57,70,.15);border:1px solid rgba(230,57,70,.6);color:#ff8a93;display:flex;align-items:center;justify-content:center;font-weight:800}
+.trust-item span{font-size:.9rem;font-weight:700;color:#e8edf4}
+/* SECTIONS */
+section{padding:76px 0}
+.sec-head{text-align:center;max-width:660px;margin:0 auto 44px}
+.sec-kicker{color:var(--red-d);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:.8rem;margin-bottom:10px}
+.sec-head h2{font-size:clamp(1.7rem,3vw,2.4rem);font-weight:700;margin-bottom:12px;text-transform:uppercase}
+.sec-head p{color:var(--muted)}
+/* SERVICES */
+.services{background:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:32px 28px;transition:transform .18s,box-shadow .18s;border-top:4px solid var(--red)}
+.card:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(19,26,36,.12)}
+.card-icon{width:54px;height:54px;border-radius:14px;background:linear-gradient(135deg,var(--slate),var(--slate2));color:#ff8a93;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:18px}
+.card h3{font-size:1.2rem;margin-bottom:10px;font-family:'Manrope';font-weight:800}
+.card p{color:var(--muted);font-size:.96rem}
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about-visual{background:linear-gradient(140deg,#131a24,#31435c);border-radius:20px;min-height:340px;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:30px}
+.about-visual::before{content:"";position:absolute;inset:0;background:radial-gradient(420px 220px at 20% 15%,rgba(230,57,70,.28),transparent 60%)}
+.about-badge{position:relative;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:20px 24px;color:#fff}
+.about-badge .num{font-family:'Oswald';font-weight:700;font-size:2.2rem;color:#ff8a93}
+.about-badge p{font-size:.9rem;color:#d7dee8}
+.about-text h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-bottom:16px;text-transform:uppercase}
+.about-text p{color:var(--muted);margin-bottom:14px}
+.area-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.area-list span{background:#eef1f5;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.83rem;font-weight:600;color:var(--slate)}
+/* HOW IT WORKS */
+.how{background:var(--slate);color:#fff}
+.how .sec-head h2{color:#fff}
+.how .sec-head p{color:#c6d1e0}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:step}
+.step{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:34px 28px;position:relative}
+.step .num{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--red),var(--red-d));color:#fff;font-family:'Oswald';font-weight:700;font-size:1.4rem;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.step h3{color:#fff;font-family:'Manrope';font-weight:800;font-size:1.15rem;margin-bottom:10px}
+.step p{color:#c6d1e0;font-size:.95rem}
+/* CONTACT */
+.contact{background:var(--bg)}
+.contact-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:44px 36px;text-align:center;max-width:640px;margin:0 auto}
+.contact-card .ico{font-size:2.4rem;margin-bottom:12px}
+.contact-card h3{margin-bottom:8px;font-family:'Manrope';font-weight:800;font-size:1.4rem}
+.contact-card p{color:var(--muted);font-size:.96rem;margin-bottom:20px}
+.contact-card a.big-link{font-family:'Oswald';font-weight:700;font-size:2rem;color:var(--slate);letter-spacing:1px}
+.contact-card a.big-link:hover{color:var(--red-d)}
+.hours{margin-top:22px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:.93rem}
+.hours strong{color:var(--ink)}
+/* FOOTER */
+footer{background:#0d131c;color:#93a1b5;padding:36px 0 28px}
+.foot-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.foot-brand{color:#fff;font-family:'Oswald';font-weight:700;font-size:1.15rem;letter-spacing:1px}
+.foot-inner p{font-size:.88rem}
+@media(max-width:860px){
+  .hero-inner{grid-template-columns:1fr;padding:60px 0 52px}
+  .grid,.steps{grid-template-columns:1fr}
+  .about-grid{grid-template-columns:1fr}
+  .trust-inner{grid-template-columns:1fr 1fr}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--slate);flex-direction:column;padding:18px;gap:14px;align-items:flex-start}
+  .nav-links.open{display:flex}
+  .menu-toggle{display:block}
+  section{padding:56px 0}
+}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="brand"><span class="brand-mark">R/T</span> R/T Exteriors</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#process">How It Works</a>
+      <a href="#contact">Contact</a>
+      <a class="btn" href="tel:+16513346012">📞 (651) 334-6012</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="container hero-inner">
+    <div>
+      <span class="eyebrow">Chisago City, MN · Licensed &amp; Insured</span>
+      <h1>Roofing Done Right <span>the First Time.</span></h1>
+      <p class="lead">R/T Exteriors is a fully licensed and insured roofing contractor with 20+ years of experience serving Chisago City, Wyoming, White Bear Lake and the surrounding communities.</p>
+      <div class="hero-cta">
+        <a class="btn" href="tel:+16513346012">📞 Call (651) 334-6012</a>
+        <a class="btn btn-outline" href="#services">See Our Services</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>Make an Appointment Today</h3>
+      <div class="big"><a href="tel:+16513346012">(651) 334-6012</a></div>
+      <p>From roof replacement to siding and windows — quality work and top-tier customer service on every job.</p>
+      <a class="btn" href="tel:+16513346012">Call Now</a>
+      <div class="emergency">🚨 24-hour emergency services available</div>
+    </div>
+  </div>
+</header>
+
+<div class="trust">
+  <div class="container trust-inner">
+    <div class="trust-item"><span class="tick">✓</span><span>20+ Years Experience</span></div>
+    <div class="trust-item"><span class="tick">✓</span><span>Licensed &amp; Insured</span></div>
+    <div class="trust-item"><span class="tick">✓</span><span>24-Hr Emergency Service</span></div>
+    <div class="trust-item"><span class="tick">✓</span><span>Mon–Fri 8am–6pm</span></div>
+  </div>
+</div>
+
+<section class="services" id="services">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">What We Do</div>
+      <h2>Complete Home Improvement Services</h2>
+      <p>The exterior of your home has a major impact on curb appeal and resale value. We handle everything — you get one accountable contractor.</p>
+    </div>
+    <div class="grid">
+      <div class="card reveal">
+        <div class="card-icon">🏠</div>
+        <h3>Roof Replacement</h3>
+        <p>Full roof replacement by a contractor with 20+ years on Minnesota roofs. Done right the first time, backed by real experience.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">🧱</div>
+        <h3>Siding Installation</h3>
+        <p>Professional siding installation services that make your home look new and improved while protecting it from the elements.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">🪟</div>
+        <h3>Window Replacement</h3>
+        <p>Window replacement that improves comfort, curb appeal and energy performance — installed correctly, the first time.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">🌧️</div>
+        <h3>Seamless Gutters</h3>
+        <p>Seamless gutter installation for clean lines and reliable water management, protecting your siding and foundation.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">🚨</div>
+        <h3>24-Hour Emergency Service</h3>
+        <p>Storm damage can't wait. We offer 24-hour emergency services for urgent roofing and exterior problems.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">✨</div>
+        <h3>Home Improvement</h3>
+        <p>Make the most of your space with dependable home improvement services from a local team you can trust.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about-grid">
+    <div class="about-visual reveal">
+      <div class="about-badge">
+        <div class="num">20+</div>
+        <p>Years providing home improvement services to local residents</p>
+      </div>
+    </div>
+    <div class="about-text reveal">
+      <div class="sec-kicker">Why Hire R/T Exteriors?</div>
+      <h2>A Local Contractor You Can Depend On</h2>
+      <p>We're a fully licensed and insured roofing contractor based in Chisago City, Minnesota. For more than 20 years, we've provided home improvement services to local residents — focused on quality work and top-tier customer service on every job.</p>
+      <p>Your home will look new and improved once we've finished our work.</p>
+      <div class="area-list">
+        <span>Chisago City, MN</span><span>Wyoming, MN</span><span>White Bear Lake, MN</span>
+        <span>Washington County, MN</span><span>Anoka County, MN</span><span>Isanti County, MN</span>
+        <span>Hennepin County, MN</span><span>St. Croix County, WI</span><span>Polk County, WI</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="process">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">How It Works</div>
+      <h2>Simple, Straightforward, Done Right</h2>
+      <p>Three steps from first call to finished project — no runaround.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="num">1</div>
+        <h3>Call for an Appointment</h3>
+        <p>Call <a href="tel:+16513346012" style="color:#ff8a93;font-weight:700">(651) 334-6012</a> and tell us what your home needs. We'll schedule a time that works for you — including 24-hour emergency service when it can't wait.</p>
+      </div>
+      <div class="step reveal">
+        <div class="num">2</div>
+        <h3>Get an Honest Assessment</h3>
+        <p>With 20+ years of experience, we assess your roof, siding, windows or gutters and give you a straight answer on the right fix — quality work, fair price.</p>
+      </div>
+      <div class="step reveal">
+        <div class="num">3</div>
+        <h3>We Do It Right the First Time</h3>
+        <p>Our licensed and insured crew completes the work with top-tier customer service — and your home looks new and improved when we're done.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">Get In Touch</div>
+      <h2>Make an Appointment Today</h2>
+      <p>Call now — we answer, we show up, and we get the job done right the first time.</p>
+    </div>
+    <div class="contact-card reveal">
+      <div class="ico">📞</div>
+      <h3>Call R/T Exteriors</h3>
+      <p>Fastest way to reach us. 24-hour emergency services available.</p>
+      <a class="big-link" href="tel:+16513346012">(651) 334-6012</a>
+      <div class="hours">
+        <strong>Hours:</strong> Mon–Fri 8:00am–6:00pm<br>
+        📍 26096 Kodiak Avenue, Chisago City, MN 55013
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container foot-inner">
+    <div>
+      <div class="foot-brand">R/T EXTERIORS, LLC</div>
+      <p>Roofing · Siding · Windows · Gutters — Chisago City, MN</p>
+    </div>
+    <p>© 2026 R/T Exteriors, LLC. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>10),{passive:true});
+const toggle=document.getElementById('menuToggle'),links=document.getElementById('navLinks');
+toggle.addEventListener('click',()=>links.classList.toggle('open'));
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
